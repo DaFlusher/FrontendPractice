@@ -114,7 +114,10 @@ footer{
     body{
         margin: 1rem 4rem;
     }
-
+    
+    p{
+        font-size: 1rem;
+    }
     main,footer{
         top: 200px;
     }
@@ -145,6 +148,10 @@ footer{
     article img,article video{
         height: 100%;
         object-fit: fill;
+    }
+
+    h2{
+        font-size: 2rem;
     }
 
 
