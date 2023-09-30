@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+body{
+    box-sizing: border-box;
+    font-family: 'Lato', Verdana,sans-serif;
+    margin: 1rem;
+
+}
+
+header{
+    margin: 0 auto;
+    min-width: 30%;
+    max-width: 60%;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+    align-items: center;
+    text-align: center;
+    background-color: #e8e5e480;
+    border-radius: 100px;
+    border: 1px solid #e8e5e480;
+    padding: 0.125rem 0;
+    position: fixed;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 1;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    margin: 0 1rem;
+
+}
+nav div{
+    background-color: #fff;
+    padding: 0.75rem 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 100px;
+}
+
+a:hover{
+    color: #7f7f7f;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main,footer{
+    position: relative;
+    top: 200px;
+    
+}
+
+.hero{
+    text-align: center;
+    margin-bottom: 200px;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+
+
+main div.categories{
+    display: none;
+}
+
+/*Styling the image section*/
+article{
+    margin-bottom: 1.5rem;
+    
+}
+
+article p{
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+article img, article video{
+    height: 50%;
+    border-radius: 20px;
+}
+
+
+h2 ,span{
+    display: block;
+    text-align: center;
+    
+}
+
+span{
+    color: #7f7f7f;
+}
+
+footer{  
+    text-align: center;
+    margin: 3rem 0;
+    padding-bottom: 1.5rem;
+}
+
+/*Responsive Styles*/
+
+@media screen and (min-width:808px) {
+
+    body{
+        margin: 1rem 4rem;
+    }
+
+    main,footer{
+        top: 200px;
+    }
+    main div.categories{
+        display:flex;
+        
+        justify-content: space-around;
+    }
+
+    div.categories p{
+        background-color: #e8e5e480;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+    }
+    
+    h1{
+        font-size: 3rem;
+        text-wrap: balance;
+    }
+
+    div.images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+        row-gap: 2rem;
+    }
+
+    article img,article video{
+        height: 100%;
+        object-fit: fill;
+    }
+
+
+}
